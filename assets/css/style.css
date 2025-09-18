@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-in { 
+    opacity: 1; 
+}
+
+h1.main-title {
+    font-size: 5rem;
+    color: #8b0000;
+    text-shadow: 0 0 3px #8b0000, 0 0 10px #8b0000, 0 0 20px #330000;
+    animation: morse 5s infinite;
+    margin: 0;
+}
+
+@keyframes morse {
+    0%, 5%, 10% { opacity: 1; }
+    6%, 9%, 11%, 14% { opacity: 0; }
+    15%, 20% { opacity: 1; }
+    21%, 24% { opacity: 0; }
+    25%, 30% { opacity: 1; }
+    31%, 34% { opacity: 0; }
+    35%, 40% { opacity: 1; }
+    41%, 44% { opacity: 0; }
+    45%, 50% { opacity: 1; }
+    51%, 54% { opacity: 0; }
+    55%, 60% { opacity: 1; }
+    61%, 64% { opacity: 0; }
+    65%, 70% { opacity: 1; }
+    71%, 74% { opacity: 0; }
+    75%, 80% { opacity: 1; }
+    81%, 84% { opacity: 0; }
+    85%, 90% { opacity: 1; }
+    91%, 94% { opacity: 0; }
+    95%, 100% { opacity: 1; }
+}
+
+p { 
+    margin-top: 20px; 
+    font-size: 1.2rem; 
+    color: #ccc; 
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
